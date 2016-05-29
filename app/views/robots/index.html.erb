@@ -1,0 +1,21 @@
+<div ng-app="app" ng-controller="robotCtrl" ng-init="setup()">
+
+<p id="notice"><%= notice %></p>
+<h1>Robot List {{robots.length}}</h1>
+
+<table class="table table-hover">
+<tr>
+  <th ng-click="toggleOrder('id')">ID</th>
+  <th ng-click="toggleOrder('name')">Name</th>
+  <th ng-click="toggleOrder('profession')">Profession</th>
+  <th ng-click="toggleOrder('image')">Image</th>
+</tr>
+<tr ng-repeat="robot in robots">
+  <td>{{ robot.id }}</td>
+  <td>{{ robot.name }}</td>
+  <td>{{ robot.profession }}</td>
+  <td>{{ robot.image }}</td>
+</tr>
+</table>
+
+</div>

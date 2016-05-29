@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @api_v1_robot.name %>
+</p>
+
+<p>
+  <strong>Profession:</strong>
+  <%= @api_v1_robot.profession %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @api_v1_robot.image %>
+</p>
+
+<%= link_to 'Edit', edit_api_v1_robot_path(@api_v1_robot) %> |
+<%= link_to 'Back', api_v1_robots_path %>
